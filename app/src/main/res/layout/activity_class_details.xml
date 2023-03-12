@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ClassDetails">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="1. Introduction to the Course"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:text="Length: 1 hr 30 min" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginLeft="5dp"
+        android:text="This module provides an in-depth look at the fundamentals of coding in HTML and CSS. We start by exploring HTML Development using some of the most commonly used tags and attributes. Then we will dive into CSS to fully customize the look of their web pages." />
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:text="WATCH LESSON"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="Take notes:"/>
+
+    <EditText
+        android:id="@+id/notes"
+        android:hint="Enter your notes"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <Button
+        android:id="@+id/btn_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:backgroundTint="#FFA500"
+        android:text="SAVE NOTES"/>
+
+    <TextView
+        android:id="@+id/notes_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="15sp"
+        android:textColor="#FF0000"/>
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#2196F3"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:text="MARK COMPLETE"/>
+</LinearLayout>
